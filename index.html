@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { background-color: transparent; margin: 0; overflow: hidden; }
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  #hacker-text {
+    color: #00FF00;
+    font-family: 'Courier New', monospace;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    /* Efecto Neón */
+    text-shadow: 0 0 5px #00FF00, 0 0 10px #00FF00, 0 0 20px #000;
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+  <div id="container">
+    <div id="hacker-text">CARGANDO SISTEMA...</div>
+  </div>
+
+<script>
+  const mensajes = [
+    "Sintonizando: Ritmos Dhuari...",
+    "Escupe lo que te ahoga. Te leemos.",
+    "Música para almas cansadas.",
+    "Mañana será un día diferente.",
+    "Cargando nuevos mensajes de desahogo..."
+  ];
+  let i = 0;
+  setInterval(() => {
+    const el = document.getElementById('hacker-text');
+    // Efecto de parpadeo al cambiar
+    el.style.opacity = 0;
+    setTimeout(() => {
+      el.innerText = mensajes[i];
+      el.style.opacity = 1;
+      i = (i + 1) % mensajes.length;
+    }, 500);
+  }, 10000); // Cambia cada 10 segundos
+</script>
+</body>
+</html>
