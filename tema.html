@@ -7,7 +7,7 @@
             background-color: transparent; /* Fondo transparente para el stream */
             margin: 0;
             overflow: hidden;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Courier New', Courier, monospace; /* Tipografía tipo hacker/retro */
         }
 
         .container {
@@ -16,47 +16,42 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            color: #d1d1d1; /* Gris claro melancólico */
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            color: #ffffff; /* BLANCO PURO para máximo contraste */
+            text-shadow: 4px 4px 5px #000000; /* SOMBRA NEGRA FUERTE para resaltar */
         }
 
         .header {
-            font-size: 24px;
+            font-size: 32px; /* Título más grande */
             margin-bottom: 10px;
             letter-spacing: 2px;
-            animation: pulse 3s infinite ease-in-out;
+            font-weight: bold;
         }
 
         .command-box {
-            background: rgba(0, 0, 0, 0.6);
-            border-left: 4px solid #55acee; /* Azul tenue */
+            background: rgba(0, 0, 0, 0.8); /* Fondo negro más oscuro detrás del comando */
+            border-left: 5px solid #ffffff; /* Borde blanco brillante */
             padding: 15px 25px;
             border-radius: 5px;
         }
 
         .command {
-            font-size: 32px;
+            font-size: 40px; /* Comando mucho más grande */
             color: #ffffff;
             font-weight: bold;
         }
 
         .sub-text {
-            font-size: 14px;
+            font-size: 18px; /* Ejemplo más grande */
             margin-top: 10px;
-            color: #888;
+            color: #cccccc; /* Gris claro para el ejemplo */
             font-style: italic;
         }
 
-        @keyframes pulse {
-            0% { opacity: 0.6; transform: scale(0.98); }
-            50% { opacity: 1; transform: scale(1); }
-            100% { opacity: 0.6; transform: scale(0.98); }
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">🎵 Pide el beat que mueve tu corazón:</div>
+        <div class="header">PIDE TU MÚSICA:</div>
         <div class="command-box">
             <div class="command">!play [Canción] [Artista]</div>
         </div>
